@@ -32,3 +32,14 @@ def is_strong_number(n: int) -> bool:
         temp //= 10
         
     return sum_of_factorials == original_num
+
+if __name__ == "__main__":
+    n = 145
+    if is_strong_number(n):
+        print(f"{n} is a Strong Number.")
+    else:
+        print(f"{n} is not a Strong Number.")
+        
+    n2 = 123
+    print(f"{n2} is a Strong Number: {is_strong_number(n2)}")
+
